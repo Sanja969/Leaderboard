@@ -1,0 +1,10 @@
+.scores {
+  border: 1px solid black;
+  margin: 10px;
+  width: 400px;
+  padding: 10px;
+}
+
+li {
+  list-style: none;
+}
