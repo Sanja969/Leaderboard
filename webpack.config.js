@@ -6,7 +6,7 @@ module.exports = {
   entry: {
     index: './src/index.js',
     UI: './src/UI.js',
-    add: './src/add.js',
+    add: './src/API-data.js',
   },
   devtool: 'inline-source-map',
   devServer: {
