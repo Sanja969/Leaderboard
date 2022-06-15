@@ -1,23 +1,20 @@
 import './style.css';
-import { add, list, Scores } from './add.js';
-import createScoreElement from './UI.js';
+import { postData, showUsersScore } from './API-data.js';
 
-const storage = JSON.parse(localStorage.getItem('scores')) || [];
-const submitBtn = document.querySelector('#submit');
-const nameInput = document.querySelector('#name');
-const scoreInput = document.querySelector('#score');
+const form = document.querySelector('form');
 const refresh = document.querySelector('#refresh');
+const scoreContainer = document.querySelector('.scores');
 
-storage.forEach((item) => {
-  const scoreData = new Scores(item.name, item.score);
-  list.push(scoreData);
-  createScoreElement(scoreData.name, scoreData.score);
-});
+showUsersScore();
 
-submitBtn.addEventListener('click', () => {
-  add(nameInput.value, scoreInput.value);
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  postData(form);
+  form.children[1].value = '';
+  form.children[2].value = '';
 });
 
 refresh.addEventListener('click', () => {
-  document.location.href = './index.html';
+  scoreContainer.innerHTML = '';
+  showUsersScore();
 });
