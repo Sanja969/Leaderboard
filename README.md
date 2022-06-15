@@ -27,6 +27,11 @@ or
 to get a local copy , clone the repository using git clone
 (https://github.com/Sanja969/Leaderboard.git)
 
+After you clone it run  the following commands
+
+ - cd Leaderboard
+ - npm install
+- npm run start
 
 ## Authors
 

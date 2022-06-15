@@ -1,0 +1,38 @@
+.scores {
+  border: 1px solid black;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+li {
+  list-style: none;
+}
+
+.content {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin: 10px 0;
+}
+
+.leftSide {
+  width: 300px;
+}
+
+.scoresHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button {
+  height: 30px;
+}
