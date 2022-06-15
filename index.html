@@ -9,7 +9,7 @@
     <main>
       <h1>Leaderboard</h1>
       <div class="content">
-        <section>
+        <section class="leftSide">
           <div class="scoresHead">
             <h2>Recent scores</h2>
             <button id="refresh">Refresh</button>
@@ -21,11 +21,12 @@
         </section>
         <form>
           <h2>Add your score</h2>
-          <input type="text" placeholder="Your name" required id="name">
-          <input type="text" placeholder="Your score" required id="score">
+          <input type="text" name="user" placeholder="Your name" required id="name">
+          <input type="text" name="score" placeholder="Your score" required id="score">
           <input type="submit" value="submit" id="submit">  
         </form>
       </div>
+      
     </main>
   </body>
 </html>
