@@ -1,5 +1,5 @@
 {
-  "name": "To-Do-List",
+  "name": "leaderboard",
   "version": "1.0.0",
   "description": "",
   "private": true,
@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Sanja969/To-Do-List.git"
+    "url": "git+https://github.com/Sanja969/Leaderboard.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Sanja969/To-Do-List/issues"
+    "url": "https://github.com/Sanja969/Leaderboard/issues"
   },
-  "homepage": "https://github.com/Sanja969/To-Do-List#readme",
+  "homepage": "https://github.com/Sanja969/Leaderboard#readme",
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.18.2",
     "babel-eslint": "^10.1.0",
@@ -27,6 +27,8 @@
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.26.0",
+    "favicons": "^6.2.2",
+    "favicons-webpack-plugin": "^5.0.2",
     "hint": "^6.2.0",
     "html-loader": "^3.1.0",
     "html-webpack-plugin": "^5.5.0",
