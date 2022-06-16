@@ -1,38 +1,60 @@
-.scores {
-  border: 1px solid black;
-  margin: 10px 0;
-  padding: 10px;
+* {
+  font-family: 'Permanent Marker', cursive;
 }
 
-li {
-  list-style: none;
+.navbar-toggler {
+  height: 40px;
 }
 
-.content {
-  display: flex;
-  width: 80%;
-  justify-content: space-around;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-input {
-  margin: 10px 0;
+.main {
+  background-color: rgba(103, 103, 114, 0.472);
 }
 
 .leftSide {
   width: 300px;
 }
 
-.scoresHead {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+button {
+  height: 40px;
 }
 
-button {
+.scores {
+  box-shadow: 0 0 40px 20px rgba(33, 33, 36, 0.62);
+  color: white;
+}
+
+.scores > li {
+  width: 90%;
+  list-style: none;
+}
+
+.user-info {
+  margin: 10px 0;
+  border-radius: 5px;
+  background-color: #ffc107;
+  border: none !important;
+}
+
+.icon {
+  width: 30px;
   height: 30px;
+}
+
+@media (min-width: 768px) {
+  .main {
+    width: 75% !important;
+    display: flex;
+    flex-direction: row !important;
+    align-items: start !important;
+  }
+
+  footer > .navbar > li {
+    margin: 0 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main {
+    width: 50% !important;
+  }
 }

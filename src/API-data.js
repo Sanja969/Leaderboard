@@ -31,6 +31,15 @@ const getData = async () => {
 
 const showUsersScore = () => {
   getData().then((data) => {
+    data.sort((a, b) => {
+      if (a.score < b.score) {
+        return 1;
+      }
+      if (a.score > b.score) {
+        return -1;
+      }
+      return 0;
+    });
     data.forEach((user) => {
       createScoreElement(user.user, user.score);
     });

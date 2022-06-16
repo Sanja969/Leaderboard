@@ -1,12 +1,13 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 module.exports = {
   mode: 'development',
   entry: {
     index: './src/index.js',
     UI: './src/UI.js',
-    add: './src/API-data.js',
+    API: './src/API-data.js',
   },
   devtool: 'inline-source-map',
   devServer: {
@@ -17,6 +18,7 @@ module.exports = {
       title: 'To Do List',
       template: './src/index.html',
     }),
+    new FaviconsWebpackPlugin('./src/assets/logo.png'),
   ],
   output: {
     filename: '[name].bundle.js',
