@@ -21,6 +21,21 @@ button {
 .scores {
   box-shadow: 0 0 40px 20px rgba(33, 33, 36, 0.62);
   color: white;
+  overflow-y: scroll;
+  height: 400px;
+}
+
+.scores::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scores::-webkit-scrollbar-track {
+  background: rgba(255, 166, 0, 0);
+}
+
+.scores::-webkit-scrollbar-thumb {
+  background-color: #ffc107;
+  border-radius: 20px;
 }
 
 .scores > li {
